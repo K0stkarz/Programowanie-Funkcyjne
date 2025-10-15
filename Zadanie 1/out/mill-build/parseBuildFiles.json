@@ -1,0 +1,16 @@
+{
+    "value": {
+        "seenScripts": [
+            [
+                "/home/kostkarz/Dokumenty/Funkcyjne/Zadanie 1/build.mill",
+                "\nimport mill._, scalalib._\n\nobject app extends ScalaModule {\n  def scalaVersion = \"2.13.15\"\n\n  \n\n  def ivyDeps = Agg(\n    ivy\"com.lihaoyi::cask:0.9.7\",\n  )\n  object test extends ScalaTests with TestModule.Utest{\n\n    def ivyDeps = Agg(\n      ivy\"com.lihaoyi::utest::0.8.4\",\n      ivy\"com.lihaoyi::requests::0.9.0\",\n    )\n  }\n}\n"
+            ]
+        ],
+        "repos": [],
+        "ivyDeps": [],
+        "errors": [],
+        "millImport": false
+    },
+    "valueHash": 1159251391,
+    "inputsHash": -1795253875
+}
