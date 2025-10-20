@@ -8,17 +8,18 @@ object Zadanie_1 extends cask.MainRoutes{
   }
 
   @cask.postJson("/is-sorted")
-  def isSorted(list: Seq[Int]) = {
-    def f(list: Seq[Int], bool: Boolean) = {
-      var sorted = bool
+  def isSorted(list: Seq[Int], order: String) = {
+    def f(list: Seq[Int], order: String) = {
+      var sorted = true
       var a = list(0)
       for (i <- list) {
-        if (a <= i)
-        {
-          if (sorted == true) {
-            sorted = true
-            a = i
-          }
+        if (a <= i && sorted && order == "asc") {
+          sorted = true
+          a = i
+        }
+        else if (a >= i && sorted && order == "desc"){
+          sorted = true
+          a = i
         }
         else {
           sorted = false
@@ -32,22 +33,10 @@ object Zadanie_1 extends cask.MainRoutes{
       sorted = true
     }
     else {
-      sorted = f(list, sorted)
-      if (sorted == false) {
-        sorted = true
-        sorted = f(list.reverse, sorted)
-      }
+      sorted = f(list, order)
     }
     ujson.Obj(
       "isSorted" -> sorted
-    )
-  }
-
-  @cask.postJson("/json")
-  def jsonEndpointObj(value1: ujson.Value, value2: Seq[Int]) = {
-    ujson.Obj(
-      "value1" -> value1,
-      "value2" -> value2
     )
   }
 
