@@ -68,5 +68,12 @@ object Zadanie_1 extends cask.MainRoutes{
     )
   }
 
+  @cask.postJson("/square-lists")
+  def squareLists(list1: Seq[Int], list2: Seq[Int]) = {
+    ujson.Obj(
+      "list" -> list1.zipAll(list2, 0, 0).map {case (x,y) => List(x*x , y*y)}
+    )
+  }
+
   initialize()
 }
