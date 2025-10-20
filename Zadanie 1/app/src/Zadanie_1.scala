@@ -59,5 +59,14 @@ object Zadanie_1 extends cask.MainRoutes{
     )
   }
 
+  @cask.postJson("/append")
+  def append(e: ujson.Value, index: Int, list: Seq[ujson.Value]) = {
+    var (split1, split2) = list.splitAt(index)
+    var out = split1 ++ List(e) ++ split2
+    ujson.Obj(
+      "list" -> out
+    )
+  }
+
   initialize()
 }
