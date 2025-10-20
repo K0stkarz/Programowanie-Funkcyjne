@@ -51,5 +51,13 @@ object Zadanie_1 extends cask.MainRoutes{
     )
   }
 
+  @cask.postJson("/set-head")
+  def setHead(e: ujson.Value, list: Seq[ujson.Value]) = {
+    var out = e +: list
+    ujson.Obj(
+      "list" -> out
+    )
+  }
+
   initialize()
 }
