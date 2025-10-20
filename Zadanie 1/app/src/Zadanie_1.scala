@@ -40,5 +40,16 @@ object Zadanie_1 extends cask.MainRoutes{
     )
   }
 
+  @cask.postJson("/sum-lists")  
+  def sumLists(list1: Seq[Int], list2: Seq[Int], list3: Seq[Int]) = {
+    def g(a: Seq[Int], b: Seq[Int]) = {
+      a.zipAll(b, 0, 0).map {case (x, y) => x + y}
+    }
+
+    ujson.Obj(
+      "list" -> g(g(list1, list2), list3)
+    )
+  }
+
   initialize()
 }
