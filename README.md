@@ -14,3 +14,5 @@
 
 
 Kod: [Link do zadania 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/blob/main/Zadanie%201/app/src/Zadanie_1.scala)
+
+https://github.com/user-attachments/assets/9363231c-59cf-4842-b1d6-948237abc9b5
