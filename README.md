@@ -16,3 +16,17 @@
 Kod: [Link do zadania 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/blob/main/Zadanie%201/app/src/Zadanie_1.scala)
 
 https://github.com/user-attachments/assets/9363231c-59cf-4842-b1d6-948237abc9b5
+
+
+**Zadanie 2** Dockerfile
+
+:white_check_mark: Stwórz obraz dockerowy, który bazuje na najnowszej wersji Ubuntu LTS
+oraz który zawiera paczki:
+- Java 8
+- Python 3
+- Scala (dowolna wersja)
+- sbt
+- vim
+[Link do commita](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/2d0c9996ca202e1adc7b687dfcd260d38d126413) [Link do dockerhuba](https://hub.docker.com/repository/docker/kostkarz/funkcyjne/tags/latest/sha256:cdb206a249b08487823d5dbd18842e65133d24443bc5fa1f8eb7af47bfbf0e92)
+
+Kod:[Link do zadania 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/blob/main/Zadanie%202/Dockerfile) 
