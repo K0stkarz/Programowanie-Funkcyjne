@@ -27,6 +27,7 @@ oraz który zawiera paczki:
 - Scala (dowolna wersja)
 - sbt
 - vim
+  
 [Link do commita](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/2d0c9996ca202e1adc7b687dfcd260d38d126413) [Link do dockerhuba](https://hub.docker.com/repository/docker/kostkarz/funkcyjne/tags/latest/sha256:cdb206a249b08487823d5dbd18842e65133d24443bc5fa1f8eb7af47bfbf0e92)
 
-Kod:[Link do zadania 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/blob/main/Zadanie%202/Dockerfile) 
+Kod: [Link do zadania 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/blob/main/Zadanie%202/Dockerfile) 
