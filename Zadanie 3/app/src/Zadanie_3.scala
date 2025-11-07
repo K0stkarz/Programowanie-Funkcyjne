@@ -10,5 +10,15 @@ object Zadanie_3 extends cask.MainRoutes{
     "Hello World!"
   }
 
+  @cask.postJson("/get-tail")
+  def getTail(list: Seq[ujson.Value]) = {
+    val myList = SingleList(list: _*)
+    val tail = myList.tail
+
+    ujson.Obj(
+      "tail" -> tail.toSeq
+    )
+  }
+
   initialize()
 }
