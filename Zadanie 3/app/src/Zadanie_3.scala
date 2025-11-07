@@ -30,5 +30,15 @@ object Zadanie_3 extends cask.MainRoutes{
     )
   }
 
+  @cask.postJson("/drop-while")
+  def dropWhile(predicate: String, list: Seq[ujson.Value]) = {
+    val myList = DoubleList(list: _*)
+    val dropped = myList.dropWhile(predicate)
+
+    ujson.Obj(
+      "dropped" -> dropped.toSeq
+    )
+  }
+
   initialize()
 }

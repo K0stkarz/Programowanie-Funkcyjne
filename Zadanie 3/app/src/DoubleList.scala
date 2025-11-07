@@ -8,6 +8,23 @@ sealed trait DoubleList[+A] {
             else t.drop(n - 1)
     }
 
+    def dropWhile(predicate: String): DoubleList[A] = this match {
+        case NilD => NilD
+        case NodeD(h, _, t) =>
+            if (matchPredicate(h.toString.toInt, predicate)) t.dropWhile(predicate)
+            else this
+    }
+
+    private def matchPredicate(value: Int, predicate: String): Boolean = predicate match {
+        case s"<=$num" => value <= num.toInt
+        case s">=$num" => value >= num.toInt
+        case s"<$num" => value < num.toInt
+        case s">$num" => value > num.toInt
+        case s"==$num" => value == num.toInt
+        case s"!=$num" => value != num.toInt
+        case _ => false
+    }
+
     def toSeq: Seq[A] = this match {
         case NilD => Seq.empty
         case NodeD(h, _, t) => h +: t.toSeq
