@@ -20,5 +20,15 @@ object Zadanie_3 extends cask.MainRoutes{
     )
   }
 
+  @cask.postJson("/drop-n")
+  def dropN(n: Int, list: Seq[ujson.Value]) = {
+    val myList = DoubleList(list: _*)
+    val dropped = myList.drop(n)
+
+    ujson.Obj(
+      "dropped" -> dropped.toSeq
+    )
+  }
+
   initialize()
 }
