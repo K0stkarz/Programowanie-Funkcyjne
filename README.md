@@ -31,3 +31,17 @@ oraz który zawiera paczki:
 [Link do commita](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/2d0c9996ca202e1adc7b687dfcd260d38d126413) [Link do dockerhuba](https://hub.docker.com/repository/docker/kostkarz/funkcyjne/tags/latest/sha256:cdb206a249b08487823d5dbd18842e65133d24443bc5fa1f8eb7af47bfbf0e92)
 
 Kod: [Link do zadania 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/blob/main/Zadanie%202/Dockerfile) 
+
+**Zadanie 3** Struktury danych
+
+:white_check_mark: 3.0 zwrócą wynik funkcji tail, która usuwa pierwszy element z listy (parameter); należy rozważyć przypadek Nil jako parametr [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/8e70be282c8172a8493403c9937bf9cc346ac052)
+
+:white_check_mark: 3.5 zwróci wynik funkcji drop, która usuwa n elementów z listy dwukierunkowej [Link do commita 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/5d6c2e4ddb24359e2fa098ee8a7e4eb876d9fbca)
+
+:white_check_mark: 4.0 zwróci wynik funkcji dropWhile, która usuwa n elementów z listy dwukierunkowej, które spełniają warunek funkcji (parametr); należy wykorzystać podejście pattern match [Link do commita 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/59d9e81e23443ba37b36588d4d0a60f3dd1d8fdd)
+
+:x: 4.5 zwróci wynik funkcji foldLeft wykorzystując do tego companion object
+
+:x: 5.0 zwróci wynik funkcji concatenate na dwóch listach (parametry), która zwraca jedną listę
+
+[Link do zadania 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%203/app/src)
