@@ -32,6 +32,9 @@ oraz który zawiera paczki:
 
 Kod: [Link do zadania 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/blob/main/Zadanie%202/Dockerfile) 
 
+https://github.com/user-attachments/assets/b52bc61b-b3cc-401e-b93b-88d977e36bc1
+
+
 **Zadanie 3** Struktury danych
 
 :white_check_mark: 3.0 zwrócą wynik funkcji tail, która usuwa pierwszy element z listy (parameter); należy rozważyć przypadek Nil jako parametr [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/8e70be282c8172a8493403c9937bf9cc346ac052)
