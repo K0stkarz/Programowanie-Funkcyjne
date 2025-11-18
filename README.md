@@ -47,4 +47,8 @@ https://github.com/user-attachments/assets/b52bc61b-b3cc-401e-b93b-88d977e36bc1
 
 :x: 5.0 zwróci wynik funkcji concatenate na dwóch listach (parametry), która zwraca jedną listę
 
-[Link do zadania 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%203/app/src)
+Kod: [Link do zadania 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%203/app/src)
+
+
+https://github.com/user-attachments/assets/574182cd-8831-4d45-b996-931b51173260
+
