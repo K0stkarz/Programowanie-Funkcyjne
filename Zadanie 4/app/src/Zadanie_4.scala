@@ -36,5 +36,21 @@ object Zadanie_1 extends cask.MainRoutes{
     )
   }
 
+  @cask.postJson("/join-lists")
+  def joinLists(list1: Option[Seq[ujson.Value]] = None, list2: Option[Seq[ujson.Value]] = None) = {
+    var result: ujson.Value = ujson.Null
+    if (list1 != None && list2 != None) {
+      val l1 = list1.get
+      val l2 = list2.get
+      val joined = l1 ++ l2
+      result = ujson.Arr(joined: _*)
+    }
+    
+    ujson.Obj(
+      "joined" -> result
+    )   
+  }
+
+
   initialize()
 }
