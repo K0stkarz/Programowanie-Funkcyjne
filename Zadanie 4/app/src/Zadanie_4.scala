@@ -22,5 +22,19 @@ object Zadanie_1 extends cask.MainRoutes{
     )
   }
 
+  @cask.postJson("/variance")
+  def variance(list: Option[Seq[ujson.Value]] = None) = {
+    var result: ujson.Value = ujson.Null
+    if (list != None) {
+      val nums = list.get.map(_.num)
+      val mean = nums.sum / nums.size
+      val variance = nums.map(x => math.pow(x - mean, 2)).sum / nums.size
+      result = ujson.Num(variance)
+    }
+    ujson.Obj(
+      "variance" -> result
+    )
+  }
+
   initialize()
 }
