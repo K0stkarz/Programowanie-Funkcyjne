@@ -49,6 +49,19 @@ https://github.com/user-attachments/assets/b52bc61b-b3cc-401e-b93b-88d977e36bc1
 
 Kod: [Link do zadania 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%203/app/src)
 
-
 https://github.com/user-attachments/assets/574182cd-8831-4d45-b996-931b51173260
 
+
+**Zadanie 3** Typ opcjonalny
+
+:white_check_mark: 3.0 zwróci taki sam wynik jak zad.1 4.5 ale wykorzysta typ opcjonalny [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/8e94905b425221ba79ef6234cd1b07afcd242846)
+
+:white_check_mark: 3.5 zwroci wariancję z listy; do implementacji wykorzystać należy typ opcjonalny [Link do commita 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/84e093f6e806a595304f50626250af8216c9c6eb)
+
+:white_check_mark: 4.0 zwróci listę (option), która jest wynikiem połączenia dwóch list (option); w przypadku gdy jedna z list jest None, funkcja powinna zwrócić None [Link do commita 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/965d4d585be8cef18096d027d93024d88abc1c01)
+
+:x: 4.5 zwróci listę za pomocą metody mojeMap[A,B,C](a: Option[A], b: Option[B])(f:(A,B)=>C):Option[C]; należy wykorzystać metodę flatMap oraz map
+
+:x: 5.0 zwróci taki średnią (mean) z listy zwracając Either
+
+Kod: [Link do zadania 4](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%204/app/src)
