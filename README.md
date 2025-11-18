@@ -52,7 +52,7 @@ Kod: [Link do zadania 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/tre
 https://github.com/user-attachments/assets/574182cd-8831-4d45-b996-931b51173260
 
 
-**Zadanie 3** Typ opcjonalny
+**Zadanie 4** Typ opcjonalny
 
 :white_check_mark: 3.0 zwróci taki sam wynik jak zad.1 4.5 ale wykorzysta typ opcjonalny [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/8e94905b425221ba79ef6234cd1b07afcd242846)
 
@@ -65,3 +65,6 @@ https://github.com/user-attachments/assets/574182cd-8831-4d45-b996-931b51173260
 :x: 5.0 zwróci taki średnią (mean) z listy zwracając Either
 
 Kod: [Link do zadania 4](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%204/app/src)
+
+https://github.com/user-attachments/assets/19646b99-260b-4864-974b-0e42b02a9245
+
