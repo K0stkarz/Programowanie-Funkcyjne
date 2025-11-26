@@ -68,3 +68,16 @@ Kod: [Link do zadania 4](https://github.com/K0stkarz/Programowanie-Funkcyjne/tre
 
 https://github.com/user-attachments/assets/19646b99-260b-4864-974b-0e42b02a9245
 
+**Zadanie 5** MapReduce
+
+:white_check_mark: 3.0 zwróci słownik z liczbą powtarzających się liczb za pomocą funkcji mapreduce dla list z liczbami [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/3005304b1673df7efae05a810648c610539addb4)
+
+:white_check_mark: 3.5 zwróci słownik z liczbami podniesionymi do sześcianu za pomocą funkcji mapreduce dla list z liczbami [Link do commita 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/dce57e3bc82c00e894c34d6202691a71358b996f)
+
+:white_check_mark: 4.0  zwróci słownik (student, godziny nauki), która wykorzysta funkcją mapreduce oraz groupBy dla słownika na wejściu [Link do commita 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/7f6f18c26bebfcd916c5a71ba1c57bd831cd410d)
+
+:x: 4.5 zwróci słownik (zdanie, wektor), która wykorzysta funkcję mapreduce oraz bagOfWords
+
+:x: 5.0 zwróci słownik (student, średnia ocen), która wykorzysta funkcję mapreduce oraz join; na wejściu  są dwie listy: (numer_indeksu, student), (numer_indeksu, kurs, ocena)
+
+Kod: [Link do zadania 5](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%205/app/src)
