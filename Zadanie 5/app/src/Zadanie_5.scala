@@ -42,5 +42,24 @@ object Zadanie_1 extends cask.MainRoutes{
     )
   }
 
+    @cask.postJson("/student-hours")
+  def studentHours(list: Seq[ujson.Value]) = {
+    def mapReduce(list: Seq[ujson.Value]) = {
+      val mapped = list.map(student => {
+        val name = student("student").str
+        val hours = student("hours").num
+        (name, hours)
+      })
+      val reduced = mapped.groupBy(tuple => tuple._1)
+      val totalHours = reduced.mapValues(_.map(_._2).sum)
+      totalHours
+    }
+    val result = mapReduce(list)
+
+    ujson.Obj(
+      "total_hours" -> result.map{ case (k, v) => (k, ujson.Num(v))}
+    )
+  }
+
   initialize()
 }
