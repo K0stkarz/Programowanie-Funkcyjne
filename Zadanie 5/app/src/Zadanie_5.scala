@@ -26,5 +26,21 @@ object Zadanie_1 extends cask.MainRoutes{
     )
   }
 
+  @cask.postJson("/qube-numbers")
+  def qubeNumbers(list: Seq[ujson.Value]) = {
+    def mapReduce(list: Seq[ujson.Value]) = {
+      val mapped = list.map(number => {
+        val num = number.num.toDouble
+        (number, num * num * num)
+      })
+      val reduced = mapped.groupBy(tuple => tuple._1)
+      reduced
+    }
+    val result = mapReduce(list)
+    ujson.Obj(
+      "qubes" -> result.map{ case (k, v) => (k.toString(), ujson.Num(v.head._2))}
+    )
+  }
+
   initialize()
 }
