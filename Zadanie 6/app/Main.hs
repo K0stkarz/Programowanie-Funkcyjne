@@ -40,6 +40,14 @@ data E4 = E4 {
 instance FromJSON E4
 instance ToJSON E4
 
+data E5 = E5 {
+    listX :: [Value],
+    listY :: [Value]
+    } deriving (Show, Generic)
+
+instance FromJSON E5
+instance ToJSON E5  
+
 isSorted :: [Value] -> Text -> Bool
 isSorted lst ord = case ord of 
     "asc"  -> and $ zipWith (<=) lst (tail lst)
@@ -61,6 +69,18 @@ setHead l e = e : l
 
 append :: [Value] -> Int -> Value -> [Value]
 append l idx e = let (front, back) = splitAt idx l in front ++ [e] ++ back
+
+squareLists :: [Value] -> [Value] -> [[Value]]
+squareLists l1 l2 = map 
+    (\ (a, b) -> case (a, b) of
+        (Number x, Number y) -> [Number (x * x), Number (y * y)]
+        _ -> [Null, Null]
+
+    ) (zip (extList l1) (extList l2))
+    where
+        maxLength = max (length l1) (length l2)
+        extList l = l ++ replicate (maxLength - length l) (Number 0)
+
 
 main :: IO ()
 main = scotty 3000 $ do
@@ -96,4 +116,11 @@ main = scotty 3000 $ do
         let idx = index e4
         let e = elementB e4
         let result = append lst idx e
+        json $ object ["result" .= result]
+
+    post "/square-lists" $ do
+        e5 <- jsonData :: ActionM E5
+        let l1 = listX e5
+        let l2 = listY e5
+        let result = squareLists l1 l2
         json $ object ["result" .= result]
