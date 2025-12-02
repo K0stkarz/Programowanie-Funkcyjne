@@ -31,6 +31,15 @@ data E3 = E3 {
 instance FromJSON E3
 instance ToJSON E3
 
+data E4 = E4 {
+    listB :: [Value],
+    index :: Int,
+    elementB :: Value
+    } deriving (Show, Generic)
+
+instance FromJSON E4
+instance ToJSON E4
+
 isSorted :: [Value] -> Text -> Bool
 isSorted lst ord = case ord of 
     "asc"  -> and $ zipWith (<=) lst (tail lst)
@@ -48,7 +57,10 @@ sumLists l1 l2 = zipWith (sumXY) (extList l1) (extList l2)
         extList l = l ++ replicate (maxLength - length l) (Number 0)
         
 setHead :: [Value] -> Value -> [Value]
-setHead l e = e : l    
+setHead l e = e : l   
+
+append :: [Value] -> Int -> Value -> [Value]
+append l idx e = let (front, back) = splitAt idx l in front ++ [e] ++ back
 
 main :: IO ()
 main = scotty 3000 $ do
@@ -76,4 +88,12 @@ main = scotty 3000 $ do
         let lst = listA e3
         let e = element e3
         let result = setHead lst e
+        json $ object ["result" .= result]
+
+    post "/append" $ do
+        e4 <- jsonData :: ActionM E4
+        let lst = listB e4
+        let idx = index e4
+        let e = elementB e4
+        let result = append lst idx e
         json $ object ["result" .= result]
