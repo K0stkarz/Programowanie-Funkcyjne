@@ -81,3 +81,18 @@ https://github.com/user-attachments/assets/19646b99-260b-4864-974b-0e42b02a9245
 :x: 5.0 zwróci słownik (student, średnia ocen), która wykorzysta funkcję mapreduce oraz join; na wejściu  są dwie listy: (numer_indeksu, student), (numer_indeksu, kurs, ocena)
 
 Kod: [Link do zadania 5](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%205/app/src)
+
+**Zadanie 6** Scotty
+
+:white_check_mark: 3.0 Zaimplementuj funkcję isSorted, która sprawdza czy dana funkcja jest posortowana zgodnie z podaną funkcją porównawczą [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/dd1838733e3e7cd32bfd45dab03a0fde2ffcd278)
+
+:white_check_mark: 3.5 Zaimplementuj funkcję, która zsumuje liczby po wierszach z trzech list na wejściu; wykorzystaj funkcję sprowadzi funkcję z trzema argumentami, do funkcji z dwoma [Link do commita 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/17737288d59941b28bbf7aecf9c0de921cceac53)
+
+:white_check_mark: 4.0 Zaimplementuj funkcję setHead, która doda element na początku listy [Link do commita 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/1c1f14e3618de0f08631a2dce8805ec104666606)
+
+:white_check_mark: 4.5 Zaimplementuj funkcję append, która doda element we wskazanym miejscu w liście [Link do commita 4](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/6888237e06c5a1082aa9df8d6379e62b6c6bd364)
+
+:white_check_mark: 5.0 Zaimplementuj funkcję, która policzy kwadrat liczb z dwóch list (po wierszach) za pomocą funkcji map oraz funkcji anonimowej [Link do commita 5](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/474a08ca52896dad8dc5fdbea22368f8e554b491)
+
+
+Kod: [Link do zadania 6](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%206/app)
