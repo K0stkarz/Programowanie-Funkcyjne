@@ -48,3 +48,26 @@ main = do
         Scotty.get "/get-random-0-to-1" $ do 
             xs <- liftIO $ runWithState globalSeed nextRandDouble
             Scotty.json $ object ["result" .= xs]
+
+        Scotty.get "/get-random-tuples" $ do
+            let complexLogic :: Rand ((Int, Double), (Double, Int), (Double, Double, Double))
+                complexLogic = do
+                    i1 <- nextRand       
+                    d1 <- nextRandDouble 
+
+                    d2 <- nextRandDouble
+                    i2 <- nextRand
+                    
+                    t1 <- nextRandDouble
+                    t2 <- nextRandDouble
+                    t3 <- nextRandDouble
+                    
+                    return ((i1, d1), (d2, i2), (t1, t2, t3))
+
+            (pair1, pair2, triplet) <- Scotty.liftIO $ runWithState globalSeed complexLogic
+
+            Scotty.json $ object [ 
+                "pairIntDouble" .= pair1,
+                "pairDoubleInt" .= pair2,
+                "triplet"       .= triplet
+                ]
