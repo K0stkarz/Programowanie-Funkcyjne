@@ -118,3 +118,7 @@ Double, Double) wykorzystując funkcje z ocen 3.0 oraz 3.5 [Link do commita 3](h
 :x: 5.0 zwróci wartość jak w funkcji 3.5, ale wykorzysta flatMap 
 
 Kod: [Link do zadania 7](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%207/app)
+
+
+https://github.com/user-attachments/assets/471f80dc-2618-4f1a-86f7-a1b41e07a5d6
+
