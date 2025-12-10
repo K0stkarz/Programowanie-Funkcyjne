@@ -100,6 +100,10 @@ https://github.com/user-attachments/assets/64d5463d-d2db-46db-9f49-a54b6bf8bb09
 
 Kod: [Link do zadania 6](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%206/app)
 
+
+https://github.com/user-attachments/assets/37e6c7b6-4411-4b94-85a9-9d4061cbd143
+
+
 **Zadanie 7** Maszyna stanów
 
 :white_check_mark: 3.0 zwróci wartość między 0, a maxvalue of Int włącznie [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/90208826beba236381ec62a009292b19c2c22115)
