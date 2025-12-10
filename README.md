@@ -94,5 +94,19 @@ Kod: [Link do zadania 5](https://github.com/K0stkarz/Programowanie-Funkcyjne/tre
 
 :white_check_mark: 5.0 Zaimplementuj funkcję, która policzy kwadrat liczb z dwóch list (po wierszach) za pomocą funkcji map oraz funkcji anonimowej [Link do commita 5](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/474a08ca52896dad8dc5fdbea22368f8e554b491)
 
-
 Kod: [Link do zadania 6](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%206/app)
+
+**Zadanie 7** Maszyna stanów
+
+:white_check_mark: 3.0 zwróci wartość między 0, a maxvalue of Int włącznie [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/90208826beba236381ec62a009292b19c2c22115)
+
+:white_check_mark: 3.5 zwróci wartość między 0, a 1 (Double) z wyłączeniem 1 [Link do commita 2](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/73c90baa2f4a6ca4b49687bd475e399560900e4c)
+
+:white_check_mark: 4.0 zwróci pary (Int, Double), (Double, Int) oraz krotki (Double,
+Double, Double) wykorzystując funkcje z ocen 3.0 oraz 3.5 [Link do commita 3](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/c45eba55c00ec1ca42f65426855a9093dbeaa86d)
+
+:x: 4.5 zwróci wartość jak w funkcji 3.5, ale wykorzysta map
+
+:x: 5.0 zwróci wartość jak w funkcji 3.5, ale wykorzysta flatMap 
+
+Kod: [Link do zadania 7](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%207/app)
