@@ -82,6 +82,10 @@ https://github.com/user-attachments/assets/19646b99-260b-4864-974b-0e42b02a9245
 
 Kod: [Link do zadania 5](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%205/app/src)
 
+
+https://github.com/user-attachments/assets/64d5463d-d2db-46db-9f49-a54b6bf8bb09
+
+
 **Zadanie 6** Scotty
 
 :white_check_mark: 3.0 Zaimplementuj funkcję isSorted, która sprawdza czy dana funkcja jest posortowana zgodnie z podaną funkcją porównawczą [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/dd1838733e3e7cd32bfd45dab03a0fde2ffcd278)
