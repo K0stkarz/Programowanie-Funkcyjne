@@ -149,4 +149,4 @@ Kod: [Link do zadania 8](https://github.com/K0stkarz/Programowanie-Funkcyjne/tre
 
 :x: 5.0 zwróci wynik funkcji z zad. 5 na 4.5; wykorzysta Promise.all oraz funkcję map
 
-Kod: [Link do zadania 8](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%209)
+Kod: [Link do zadania 9](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%209)
