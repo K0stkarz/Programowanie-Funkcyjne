@@ -137,3 +137,16 @@ https://github.com/user-attachments/assets/471f80dc-2618-4f1a-86f7-a1b41e07a5d6
 
 Kod: [Link do zadania 8](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%208/app)
 
+**Zadanie 9** Wątki
+
+:white_check_mark: 3.0 zwróci wartość binarną czy podana na wejściu liczba jest liczbą pierwszą; wykorzysta Promise [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/a5b266cefb1de9de9e5e622a0c4aa4d50cc6f7c8)
+
+:x: 3.5  zwróci posortowaną listę; wykorzysta Promise
+
+:x: 4.0 zwróci wynik funkcji z zad. 5 na 4.0 (mapreduce); wykorzysta worker_threads
+
+:x: 4.5  zwróci wynik bagOfWords dla danego tekstu na wejściu; stworzy pulę workterów
+
+:x: 5.0 zwróci wynik funkcji z zad. 5 na 4.5; wykorzysta Promise.all oraz funkcję map
+
+Kod: [Link do zadania 8](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%209)
