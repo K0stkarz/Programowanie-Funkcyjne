@@ -122,3 +122,18 @@ Kod: [Link do zadania 7](https://github.com/K0stkarz/Programowanie-Funkcyjne/tre
 
 https://github.com/user-attachments/assets/471f80dc-2618-4f1a-86f7-a1b41e07a5d6
 
+
+**Zadanie 8** Monoidy, monady, funktory
+
+:white_check_mark: 3.0 wykorzysta metodę map fuktora do wykonania funkcji dodawania lub odejmowania na dwóch wartość przyjętych na wejściu [Link do commita 1](https://github.com/K0stkarz/Programowanie-Funkcyjne/commit/6695d805375df44548ee8c32d9a80456da846443)
+
+:x: 3.5 zwróci wartość konkatenacji trzech list za pomocą monoidy
+
+:x: 4.0 zwróci wartość sumy listy liczb lub zwróci nil; zaimplementuj wykorzystując monady
+
+:x: 4.5 zwróci zadanie z zestawy 6 na ocenę 4.0 i wykorzysta metodę combine oraz join
+
+:x: 5.0 zwróci dla listy minimum 3 elementów typu int mapę: liczba elementów, suma,  wartość minimalna, wartość maksymalna; wykorzysta do tego monadę oraz metodę foldMap
+
+Kod: [Link do zadania 8](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%208/app)
+
