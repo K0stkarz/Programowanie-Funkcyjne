@@ -150,3 +150,39 @@ Kod: [Link do zadania 8](https://github.com/K0stkarz/Programowanie-Funkcyjne/tre
 :x: 5.0 zwróci wynik funkcji z zad. 5 na 4.5; wykorzysta Promise.all oraz funkcję map
 
 Kod: [Link do zadania 9](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%209)
+
+**Zadanie 10** Funkcje w chmurze
+
+:white_check_mark: Przygotuj 3 wybrane funkcje w JS oraz udostępnij w ramach usługi Azure Functions
+
+:white_check_mark: Przygotuj 3 wybrane funkcje w Haskellu w ramach Azure App Services. Wykorzystaj obraz dockerowy.
+
+Kod: [Link do zadania 10](https://github.com/K0stkarz/Programowanie-Funkcyjne/tree/main/Zadanie%2010)
+
+Linki do aplikacji javascript:
+
+[Check Prime](https://kostkarz-js-b1-edceaegcg2h6adf8.swedencentral-01.azurewebsites.net/api/checkprime?number=7)
+
+[Factorial](https://kostkarz-js-b1-edceaegcg2h6adf8.swedencentral-01.azurewebsites.net/api/factorial?n=5)
+
+[Is Palindrome](https://kostkarz-js-b1-edceaegcg2h6adf8.swedencentral-01.azurewebsites.net/api/ispalindrome?text=kajak)
+
+Zapytania Curl do aplikacji haskell:
+
+```Bash
+curl -X POST https://kostkarz-haskell-dvezbde7dxgbb2ae.swedencentral-01.azurewebsites.net/is-sorted \
+     -H "Content-Type: application/json" \
+     -d '{"list": [1, 2, 3, 5, 10], "order": "asc"}'
+```
+
+```Bash
+curl -X POST https://kostkarz-haskell-dvezbde7dxgbb2ae.swedencentral-01.azurewebsites.net/sum-lists \
+     -H "Content-Type: application/json" \
+     -d '{"list1": [1, 2], "list2": [10, 20], "list3": [100, 200]}'
+```
+
+```Bash
+curl -X POST https://kostkarz-haskell-dvezbde7dxgbb2ae.swedencentral-01.azurewebsites.net/set-head \
+     -H "Content-Type: application/json" \
+     -d '{"listA": [2, 3, 4], "element": 1}'
+```
